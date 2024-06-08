@@ -1,144 +1,17 @@
-body {
-  margin: 0;
-  font-family: "Space Grotesk", sans-serif;
-  background-color: #151515;
-  color: white;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 2 | @import 'components';
+ *   |         ^^^^^^^^^^^^
+ *   '
+ *   src/sass/main.scss 2:9  root stylesheet */
 
-p {
-  line-height: 1.5;
-  color: #d9d9d9;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import 'components';\a   \2502          ^^^^^^^^^^^^\a   \2575 \a   src/sass/main.scss 2:9  root stylesheet";
 }
-
-* {
-  box-sizing: border-box;
-}
-
-* :first-child {
-  margin-top: 0;
-}
-
-* :last-child {
-  margin-bottom: 0;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 18px;
-  }
-}
-.heading-xl, .hero__title {
-  font-size: 2.5rem;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.social {
-  margin-top: 0;
-  list-style: none;
-  padding-left: 0;
-  display: flex;
-  justify-content: center;
-  gap: 1.56em;
-}
-.social__item {
-  cursor: pointer;
-}
-.social__icon path {
-  transition: all 300ms;
-}
-.social__item:hover .social__icon path {
-  fill: #4EE1A0;
-}
-
-.btn {
-  border: none;
-  background-color: transparent;
-  color: inherit;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2.29px;
-  border-bottom: solid 2px #4EE1A0;
-  padding-bottom: 0.625em;
-  transition: color 300ms;
-  cursor: pointer;
-}
-.btn:hover {
-  color: #4EE1A0;
-}
-
-@media (min-width: 768px) {
-  .heading-xl, .hero__title {
-    font-size: 4rem;
-  }
-  .logo {
-    font-size: 1.77rem;
-  }
-}
-@media (min-width: 1440px) {
-  .heading-xl, .hero__title {
-    font-size: 4.88rem;
-  }
-}
-.header {
-  text-align: center;
-  background-image: url(../../assets/images/pattern-rings.svg), url(../../assets/images/pattern-circle.svg), url(../../assets/images/image-profile-mobile.webp);
-  background-size: 530px 129px, 129px 129px, 174px 384px;
-  background-position: top 8em left -21em, center right -4em, top center;
-  background-repeat: no-repeat;
-  padding: 1.25em 4.2% 5em;
-}
-
-.masthead__logo {
-  margin-bottom: 0.83em;
-}
-
-.hero {
-  margin-top: 20em;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.hero__title-highlight {
-  border-bottom: solid 4px #4EE1A0;
-}
-
-@media (min-width: 768px) {
-  .header {
-    padding: 1.61em 3.9% 3.33em;
-    text-align: left;
-    background-image: url(../../assets/images/pattern-rings.svg), url(../../assets/images/pattern-circle.svg), url(../../assets/images/image-profile-tablet.webp);
-    background-size: 530px 129px, 129px 129px, 322px 600px;
-    background-position: top 4em left -13em, bottom 4em right -4em, top right;
-  }
-  .masthead {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 5em;
-  }
-  .masthead__logo {
-    margin-bottom: 0;
-  }
-  .hero {
-    margin-top: 0;
-    margin-left: 0;
-  }
-}
-@media (min-width: 1440px) {
-  .header {
-    padding: 2.16em 11.4% 5.7em;
-    background-image: url(../../assets/images/pattern-rings.svg), url(../../assets/images/pattern-circle.svg), url(../../assets/images/image-profile-desktop.webp);
-    background-size: 530px 129px, 129px 129px, 445px 720px;
-    background-position: top 4em left -13em, bottom 4em right -4em, top right 11.4%;
-  }
-  .hero {
-    max-width: 706px;
-  }
-}
-
-/*# sourceMappingURL=main.css.map */
