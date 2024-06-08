@@ -1,0 +1,35 @@
+
+
+
+.header 
+{
+    text-align: center;
+    background-image: url(../../assets/images/image-profile-mobile.webp);
+    background-size:174px 384px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+.masthead
+{
+    &__logo
+    {
+        margin-bottom: .83em;
+    }
+}
+
+
+.hero {
+    margin-top: 20em;
+
+    &__title 
+    {
+        @extend .heading-xl;
+
+        &-highlight 
+        {
+            border-bottom: solid 4px $color-Green;
+        }
+    }
+}
