@@ -4,10 +4,10 @@
 .header 
 {
     text-align: center;
-    background-image: url(../../assets/images/image-profile-mobile.webp);
-    background-size:174px 384px;
+    background-image: url(../../assets/images/pattern-rings.svg), url(../../assets/images/pattern-circle.svg), url(../../assets/images/image-profile-mobile.webp);
+    background-size:530px 129px, 129px 129px, 174px 384px;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position:top 8em left -21em, center right -4em, top center;
 }
 
 
