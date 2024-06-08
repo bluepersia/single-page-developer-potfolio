@@ -22,6 +22,11 @@ p {
   margin-bottom: 0;
 }
 
+@media (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
 .heading-xl, .hero__title {
   font-size: 2.5rem;
 }
@@ -32,6 +37,7 @@ p {
 }
 
 .social {
+  margin-top: 0;
   list-style: none;
   padding-left: 0;
   display: flex;
@@ -65,12 +71,18 @@ p {
   color: #4EE1A0;
 }
 
+@media (min-width: 768px) {
+  .heading-xl, .hero__title {
+    font-size: 4rem;
+  }
+}
 .header {
   text-align: center;
   background-image: url(../../assets/images/pattern-rings.svg), url(../../assets/images/pattern-circle.svg), url(../../assets/images/image-profile-mobile.webp);
   background-size: 530px 129px, 129px 129px, 174px 384px;
-  background-repeat: no-repeat;
   background-position: top 8em left -21em, center right -4em, top center;
+  background-repeat: no-repeat;
+  padding: 1.25em 4.2% 5em;
 }
 
 .masthead__logo {
@@ -79,9 +91,34 @@ p {
 
 .hero {
   margin-top: 20em;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero__title-highlight {
   border-bottom: solid 4px #4EE1A0;
+}
+
+@media (min-width: 768px) {
+  .header {
+    text-align: left;
+    background-image: url(../../assets/images/pattern-rings.svg), url(../../assets/images/pattern-circle.svg), url(../../assets/images/image-profile-tablet.webp);
+    background-size: 530px 129px, 129px 129px, 322px 600px;
+    background-position: top 4em left -13em, bottom 4em right -4em, top right;
+  }
+  .masthead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5em;
+  }
+  .masthead__logo {
+    margin-bottom: 0;
+  }
+  .hero {
+    margin-top: 0;
+    margin-left: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

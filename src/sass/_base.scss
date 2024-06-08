@@ -31,3 +31,11 @@ p {
 {
     margin-bottom: 0;
 }
+
+
+@media (min-width:768px)
+{
+    html {
+        font-size: 18px;
+    }
+}

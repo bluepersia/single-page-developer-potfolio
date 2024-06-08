@@ -12,6 +12,7 @@
 
 .social 
 {
+    margin-top: 0;
     list-style: none;
     padding-left: 0;
     display: flex;
@@ -47,9 +48,18 @@
     padding-bottom: .625em;
     transition: color 300ms;
     cursor: pointer;
-    
+
     &:hover
     {
         color: $color-Green;
+    }
+}
+
+
+@media (min-width: 768px)
+{
+    .heading-xl 
+    {
+        font-size: 4rem;
     }
 }
