@@ -1,0 +1,77 @@
+
+.heading-xl
+{
+    font-size: 2.5rem;
+}
+
+.logo 
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.social 
+{
+    margin-top: 0;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.56em;
+
+    &__item 
+    {
+        cursor: pointer;
+    }
+    &__icon path
+    {
+        transition: all 300ms;
+    }
+    &__item:hover &__icon path
+    {
+        fill: $color-Green;
+    }
+     
+}
+
+
+.btn 
+{
+    border:none;
+    background-color: transparent;
+    color: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2.29px;
+    border-bottom: solid 2px $color-Green;
+    padding-bottom: .625em;
+    transition: color 300ms;
+    cursor: pointer;
+
+    &:hover
+    {
+        color: $color-Green;
+    }
+}
+
+
+@media (min-width: 768px)
+{
+    .heading-xl 
+    {
+        font-size: 4rem;
+    }
+
+    .logo {
+        font-size: 1.77rem;
+    }
+}
+
+
+@media (min-width:1440px)
+{
+    .heading-xl {
+        font-size: 4.88rem;
+    }
+}
