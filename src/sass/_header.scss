@@ -51,10 +51,11 @@
 {
     .header 
     {
+        padding: 1.61em 3.9% 3.33em;
         text-align: left;
         background-image: url(../../assets/images/pattern-rings.svg), url(../../assets/images/pattern-circle.svg), url(../../assets/images/image-profile-tablet.webp);
-    background-size:530px 129px, 129px 129px, 322px 600px;
-    background-position:top 4em left -13em, bottom 4em right -4em, top right;
+        background-size:530px 129px, 129px 129px, 322px 600px;
+        background-position:top 4em left -13em, bottom 4em right -4em, top right;
     }
 
     .masthead {
@@ -74,4 +75,19 @@
         margin-left: 0;
     }
     
+}
+
+
+@media (min-width:1440px)
+{
+    .header 
+    {
+        padding: 2.16em 11.4% 5.7em;
+        background-image: url(../../assets/images/pattern-rings.svg), url(../../assets/images/pattern-circle.svg), url(../../assets/images/image-profile-desktop.webp);
+        background-size:530px 129px, 129px 129px, 445px 720px;
+        background-position:top 4em left -13em, bottom 4em right -4em, top right 11.4%;
+    }
+    .hero {
+        max-width: 706px;
+    }
 }
