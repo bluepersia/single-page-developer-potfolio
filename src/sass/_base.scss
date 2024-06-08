@@ -9,6 +9,8 @@ body
 {
     margin: 0;
     font-family: "Space Grotesk", sans-serif;
+    background-color: $color-Black;
+    color: $color-White;
 }
 p {
     line-height: 1.5;
@@ -28,4 +30,12 @@ p {
 * :last-child 
 {
     margin-bottom: 0;
+}
+
+
+@media (min-width:768px)
+{
+    html {
+        font-size: 18px;
+    }
 }
