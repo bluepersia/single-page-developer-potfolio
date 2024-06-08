@@ -1,0 +1,30 @@
+$color-Black: #151515;
+$color-Green: #4EE1A0;
+$color-DarkGrey: #242424;
+$color-LightGrey: #d9d9d9;
+$color-White:white;
+
+
+body 
+{
+    margin: 0;
+    font-family: "Space Grotesk", sans-serif;
+}
+p {
+    line-height: 1.5;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+* :first-child {
+    margin-top: 0;
+}
+
+
+* :last-child 
+{
+    margin-bottom: 0;
+}
