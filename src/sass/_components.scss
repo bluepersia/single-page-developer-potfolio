@@ -48,11 +48,13 @@
     padding-bottom: .625em;
     transition: color 300ms;
     cursor: pointer;
+    position: relative;
 
     &:hover
     {
         color: $color-Green;
     }
+
 }
 
 
