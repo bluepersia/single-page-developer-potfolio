@@ -1,0 +1,166 @@
+
+
+.footer
+{
+    background-color: $color-DarkGrey;
+    padding:3.75em 4.2% ;
+    text-align: center;
+    background-image: url(../../assets/images/pattern-rings.svg);
+    background-repeat: no-repeat;
+    background-size: 530px 129px;
+    background-position: bottom 18em left -20em;
+
+    &__btm {
+        padding-top: 2.5em;
+    }
+}
+
+
+.contact 
+{
+    border-bottom: 1px solid $color-White;
+    padding-bottom: 5.4em;
+    display: flex;
+    flex-direction: column;
+    gap: 3.125em;
+    
+    &__title 
+    {
+        @extend .heading-xl;
+    }
+
+    &__content 
+    {
+        max-width: 445px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+.form 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+    max-width: 445px;
+    margin-left: auto;
+    margin-right: auto;
+    &__input
+    {
+        color:$color-White;
+        width: 100%;
+        border:none;
+        font-family: inherit;
+        background-color: transparent;
+        border-bottom: solid 1px $color-White;
+        padding: 1em 1.5em;
+
+        &:focus
+         {
+            outline: none;
+         }
+        &-error 
+        {
+            color: $color-Red;
+            font-size: 12px;
+            text-align: right;
+            display: none;
+
+            &-icon 
+            {
+                width: 24px;
+                height: 24px;
+                border:solid 1px $color-Red;
+                border-radius: 50%;
+                color: $color-Red;
+                position: absolute;
+                top:0px;
+                right:0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                display: none;
+            }
+        }
+
+        &-container 
+        {
+            position: relative;
+
+            &.invalid .form__input
+            {
+                border-color: $color-Red;
+            }
+            &.valid .form__input {
+                border-color: $color-Green;
+            }
+        }
+
+        &-msg 
+        {
+            min-height: 100px;
+        }
+        
+    }
+
+    &__btn 
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
+    }
+  
+
+
+}
+
+
+@media (min-width:768px)
+{
+    .footer {
+        padding: 3.33em 3.9% 2.22em;
+        background-position: bottom 15em left -20em;
+
+        &__btm
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            & > * 
+            {
+                margin:0;
+            }
+        }
+    }
+
+    
+}
+
+@media (min-width:1440px)
+{
+    .footer {
+        padding: 4.66em 11.4% 5.11em;
+
+
+        background-position: bottom 15em left -20em;
+    }
+    .contact {
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+
+        &__content 
+        {
+            margin-left: 0;
+        }
+
+    }
+
+    .form {
+        margin-right: 0;
+    }
+}
