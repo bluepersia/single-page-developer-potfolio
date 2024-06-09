@@ -356,6 +356,8 @@ p {
   font-size: 12px;
   text-align: right;
   display: none;
+  position: absolute;
+  right: 0px;
 }
 .form__input-error-icon {
   width: 24px;
@@ -366,7 +368,6 @@ p {
   position: absolute;
   top: 0px;
   right: 0px;
-  display: flex;
   justify-content: center;
   align-items: center;
   display: none;
@@ -379,6 +380,12 @@ p {
 }
 .form__input-container.valid .form__input {
   border-color: #4EE1A0;
+}
+.form__input-container.invalid .form__input-error {
+  display: block;
+}
+.form__input-container.invalid .form__input-error-icon {
+  display: flex;
 }
 .form__input-msg {
   min-height: 100px;

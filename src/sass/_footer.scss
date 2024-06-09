@@ -67,7 +67,8 @@
             font-size: 12px;
             text-align: right;
             display: none;
-
+            position: absolute;
+            right: 0px;
             &-icon 
             {
                 width: 24px;
@@ -78,7 +79,6 @@
                 position: absolute;
                 top:0px;
                 right:0px;
-                display: flex;
                 justify-content: center;
                 align-items: center;
                 display: none;
@@ -95,6 +95,15 @@
             }
             &.valid .form__input {
                 border-color: $color-Green;
+            }
+
+            &.invalid .form__input-error
+            {
+                display: block;
+            }
+            &.invalid .form__input-error-icon
+            {
+                display: flex;
             }
         }
 
